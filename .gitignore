@@ -1,0 +1,7 @@
+/.ipynb_checkpoints/
+/notebooks/.ipynb_checkpoints/
+/scripts/.ipynb_checkpoints/
+/predict-breast-cancer/.ipynb_checkpoints/
+/__pycache__/
+predict-breast-cancer/__pycache__/
+/notebooks/*.bin.gz
