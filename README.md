@@ -71,21 +71,21 @@
 
 * The decision boundary appeared approximately linear when visualising the two principal components with the largest eigenvalues. Consequently a logistic regression model (with L2 regularisation) was optimised.
 
-    <img src="notebooks/figures/decision_boundary.png" align="center" width="300" />
+<img src="notebooks/figures/decision_boundary.png" align="center" width="300" />
 
 * The final model utilised $15$ principal components and a regularisation strength of $1$. The below classification report and confusion matrix shows the test set performance after retraining with the entire training set.
 
-    <img src="notebooks/figures/classification_report.png" align="center" width="300" />
+<img src="notebooks/figures/classification_report.png" align="center" width="300" />
 
-    <img src="notebooks/figures/confusion_matrix.png" align="center" width="300" />
+<img src="notebooks/figures/confusion_matrix.png" align="center" width="300" />
 
 *Where class $1$ corresponds to cancer.*
 
 * The performance of a no-skill classifier on the test data is shown below.
 
-    <img src="notebooks/figures/dummy_classification_report.png" align="center" width="300" />
+<img src="notebooks/figures/dummy_classification_report.png" align="center" width="300" />
 
-    <img src="notebooks/figures/dummy_confusion_matrix.png" align="center" width="300" />
+<img src="notebooks/figures/dummy_confusion_matrix.png" align="center" width="300" />
 
 ## Conclusion
 
