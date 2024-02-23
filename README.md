@@ -79,13 +79,15 @@
 
 <img src="notebooks/figures/confusion_matrix.png" align="center" width="300" />
 
-*Where class $1$ corresponds to cancer.*
+*Note: Class $1$ corresponds to cancer.*
 
 * The performance of a no-skill classifier on the test data is shown below.
 
 <img src="notebooks/figures/dummy_classification_report.png" align="center" width="300" />
 
 <img src="notebooks/figures/dummy_confusion_matrix.png" align="center" width="300" />
+
+*Note: Class $1$ corresponds to cancer.*
 
 ## Conclusion
 
