@@ -59,7 +59,7 @@
 
 * While a single metric simplifies ranking model performance, the dataset's slight imbalance makes overall accuracy unsuitable. Instead the goal was to maximise recall with a nominal constraint of 50% for precision.
 
-* Recall reflects the model's ability to identify all cancers (i.e. minimise false negatives). Whilst precision reflects the proportion of diagnoses which are correct (i.e. inverseley proportional to the number of false positives). 
+* Recall reflects the model's ability to identify all cancers (i.e. minimise false negatives). Whilst precision reflects the proportion of diagnoses which are correct (i.e. inversely proportional to the number of false positives). 
 
 * It is assumed the cost of a false negative prediction (i.e. incorrectly classifying a cancer as okay) outweighs the cost of a false positive prediction. The primary and secondary metrics are therefore recall and precision respectively.   
 
@@ -71,17 +71,22 @@
 
 * The decision boundary appeared approximately linear when visualising the two principal components with the largest eigenvalues. Consequently a logistic regression model (with L2 regularisation) was optimised.
 
-<img src="notebooks/figures/decision_boundary.png" align="center" width="300" />
-*Where class $1$ corresponds to cancer.*
+    <img src="notebooks/figures/decision_boundary.png" align="center" width="300" />
 
 * The final model utilised $15$ principal components and a regularisation strength of $1$. The below classification report and confusion matrix shows the test set performance after retraining with the entire training set.
 
-<img src="notebooks/figures/classification_report.png" align="center" width="300" />
+    <img src="notebooks/figures/classification_report.png" align="center" width="300" />
 
-<img src="notebooks/figures/confusion_matrix.png" align="center" width="500" />
+    <img src="notebooks/figures/confusion_matrix.png" align="center" width="300" />
 
 *Where class $1$ corresponds to cancer.*
 
+* The performance of a no-skill classifier on the test data is shown below.
+
+    <img src="notebooks/figures/dummy_classification_report.png" align="center" width="300" />
+
+    <img src="notebooks/figures/dummy_confusion_matrix.png" align="center" width="300" />
+
 ## Conclusion
 
-* Overall predictive performance was high. The goal was to maximise recall whilst ensuring a precision of at least $0.5$. This target was exceeded.
+* Overall predictive performance was high. The goal was to maximise recall whilst ensuring a precision of at least $0.5$. This target was exceeded. Furthermore the model performs better than a random classifier across all metrics.
